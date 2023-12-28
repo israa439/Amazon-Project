@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="STYLES/shared/amazon_header.css" />
+    <link rel="stylesheet" href="STYLES/shared/general.css" />
+    <link rel="stylesheet" href="STYLES/pages/checkout/checkout_header.css" />
+    <link rel="stylesheet" href="STYLES/pages/orders.css" />
+    <title>Orders</title>
+  </head>
+
+  <body>
+    <div class="checkout-header">
+      <div class="amazon-header-left-section">
+        <a href="amazon.html" class="header-link">
+          <img class="amazon-logo" src="images/amazon-logo.png" />
+          <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png" />
+        </a>
+      </div>
+
+      <div class="checkout-header-middle-section">
+        <p class="checkout-header-middle-section-content">
+          Your Orders (
+          <span class="orders-amount" id="ordersAmount"></span> orders)
+        </p>
+      </div>
+
+      <div class="orders-header-right-section">
+        <a class="orders-cart-link" href="checkout.html">
+          <img
+            class="orders-cart-icon"
+            src="images/icons/cart-icon-black.jpg"
+          />
+          <div class="orders-cart-quantity" id="cartnb"></div>
+          <div class="orders-cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
+
+    <main class="main" id="main">
+      
+    </main>
+
+    <script type="module" src="backend/orders.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Project</title>
+    <link rel="stylesheet" href="STYLES/pages/amazon.css" />
+    <link rel="stylesheet" href="STYLES/shared/amazon_header.css" />
+    <link rel="stylesheet" href="STYLES/shared/general.css" />
+   
+  </head>
+
+  <body>
+    <div class="amazon-header" id="amazon-header">
+      <div class="amazon-header-left-section">
+        <a href="amazon.html" class="header-link">
+          <img class="amazon-logo" src="images/amazon-logo-white.png" />
+          <img
+            class="amazon-mobile-logo"
+            src="images/amazon-mobile-logo-white.png"
+          />
+        </a>
+      </div>
+
+      <div class="amazon-header-middle-section">
+        <input
+          type="text"
+          class="search-bar"
+          id="searchbar"
+          placeholder="search..."
+        />
+        <button class="search-button" id="searchbtn">
+          <img class="search-icon" src="images/icons/search-icon.png" />
+        </button>
+      </div>
+
+      <div class="bg-icon" id="bg-icon">
+        <img class="burger-icon" src="images/icons/hamburger-menu.png" />
+      </div>
+
+      <div id="orderAndCart">
+        <a class="orders-link" href="orders.html">
+          <span class="returns-text">Returns </span>
+          <span class="orders-text">& Orders</span>
+        </a>
+        <a class="orders-link-mobile" href="orders.html" id="orders">
+          <span class="returns-text">Returns </span>
+          <span class="orders-text">& Orders</span>
+        </a>
+        <a class="cart-link" href="checkout.html">
+          <img class="cart-icon" src="images/icons/cart-icon.png" />
+          <div class="cart-quantity" id="cartamount"></div>
+          <div class="cart-text">Cart</div>
+        </a>
+        <a class="cart-link-mobile" id="cart" href="checkout.html">
+          <div class="cart-text">
+            <span>Cart(</span>
+            <span id="cartamount-mobile"></span>
+            <span>)</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="products" id="products"></div>
+    </main>
+
+    <script type="module" src="backend/index.js"></script>
+  </body>
+</html>

@@ -234,7 +234,7 @@ function getSelectedDate(card, radioBtn) {
 function emptyCart() {
   conatiner.innerHTML = `
 <p class="empty-cart-header">Your cart is empty.</p>
-<a href="amazon.html">
+<a href="index.html">
 <button class="empty-cart-btn">view products</button>
 </a>
 `;

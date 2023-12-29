@@ -130,7 +130,7 @@ container.addEventListener("click", (event) => {
     sessionStorage.setItem("modifiedLS", modifiedLS);
     sessionStorage.setItem("modifiedItem", JSON.stringify(modifiedItem));
    let arr = window.location.href.split("/");
-   arr[arr.legth - 1] = "tracking.html";
+   arr[arr.length - 1] = "tracking.html";
    window.location.href = arr.join("/");
   }
 });

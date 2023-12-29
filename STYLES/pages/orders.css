@@ -37,15 +37,13 @@
 }
 /*MAIN*/
 .main {
-  max-width: 1300px;
-  padding-left: 10%;
-  padding-right: 4%;
+  width: 80%;
   margin: 150px auto;
 
 }
 /*CARDS*/
 .cards {
-  width: unset;
+  width: 100%;
   border-radius: 2px;
   margin-bottom: 50px;
   border: 2px solid rgba(83, 80, 80, 0.092);
@@ -207,6 +205,6 @@
  align-items: center;
 }
  .track-btn,.order-again{
-    width: 350px;
+    width: 90%;
   }
 }

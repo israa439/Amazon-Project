@@ -354,7 +354,7 @@ function getDateHeader() {
   });
   SavingOrder();
   let arr = window.location.href.split("/");
-  arr[arr.legth - 1] = "orders.html";
+  arr[arr.length - 1] = "orders.html";
   window.location.href = arr.join("/");
 }
 function SavingOrder() {
@@ -385,7 +385,6 @@ for (let i = 0; i < localStorage.length; i++) {
   let key = localStorage.key(i);
   let values = localStorage.getItem(key);
   let data = JSON.parse(values);
-  
 }
 function addObject() {
   return {

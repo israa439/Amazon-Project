@@ -92,11 +92,11 @@ function renderItems(item, i) {
     let variation = item.sizeVariation[0];
     let firstKey = Object.keys(variation)[0];
     let sizes = Object.values(variation)[0];
-
+    let formattedString = firstKey.replace(/_/g, " ");
     for (let i = 0; i < sizes.length; i++) {
       buttonsHTML += `<button class="sizeBtn">${sizes[i]}</button>`;
     }
-    dives.innerHTML += `<p class="btn-header-size">${firstKey}</p><div class="Sized-btn-container">${buttonsHTML}</div>`;
+    dives.innerHTML += `<p class="btn-header-size">${formattedString}</p><div class="Sized-btn-container">${buttonsHTML}</div>`;
   }
 
   dives.innerHTML += `
@@ -183,12 +183,15 @@ addToCartFun();
 function getColorHeader(btn) {
   let parentElement = btn.parentElement.querySelector(".btn-header-color");
   let colorHeader = parentElement.innerHTML;
-  return colorHeader;
+   let formattedString = colorHeader.replace(/_/g, " ");
+   return formattedString;
+ 
 }
 function getSizeHeader(btn) {
   let parentElement = btn.parentElement.querySelector(".btn-header-size");
   let sizeHeader = parentElement.innerHTML;
-  return sizeHeader;
+  let formattedString = sizeHeader.replace(/_/g, " ");
+  return formattedString;
 }
 
 function getPrice(btn) {

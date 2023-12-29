@@ -423,7 +423,7 @@ const products = [
       {
         Size: "30L Tall",
         image:
-          "images/products/variations/trash-can-with-foot-pedal-30-liter.jpg",
+          "images/products/variations/trash-can-with-foot-pedal-30-liter-tall.jpg",
       },
     ],
     id: "b86ddc8b-3501-4b17-9889-a3bad6fb585f",

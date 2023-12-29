@@ -1,20 +1,18 @@
 let cart = JSON.parse(localStorage.getItem("Cart")) || null;
 
-
-if(!cart){
+if (!cart) {
   cart = [
     {
       deliveryOptionId: "1",
-      image:"http://127.0.0.1:5500/images/products/intermediate-composite-basketball.jpg",
+      image: "images/products/intermediate-composite-basketball.jpg",
       priceCents: "20.95",
       productId: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
       productName: "Intermediate Size Basketball",
       quantity: 1,
     },
   ];
-addToStorage(cart);
+  addToStorage(cart);
 }
-
 
 export async function addToStorage(c) {
   localStorage.setItem("Cart", JSON.stringify(c));

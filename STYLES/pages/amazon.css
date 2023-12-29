@@ -26,6 +26,7 @@
   align-items: center;
   height: 180px;
   margin-bottom: 20px;
+  object-fit: contain;
 }
 .product-image {
   max-width: 100%;

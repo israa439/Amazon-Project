@@ -353,7 +353,9 @@ function getDateHeader() {
     updateLocalStorage(i, undefined, date.innerHTML);
   });
   SavingOrder();
-  window.location.href = "../orders.html";
+  let arr = window.location.href.split("/");
+  arr[arr.legth - 1] = "orders.html";
+  window.location.href = arr.join("/");
 }
 function SavingOrder() {
   let orderKeys = [];

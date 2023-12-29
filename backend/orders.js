@@ -129,7 +129,9 @@ container.addEventListener("click", (event) => {
     console.log(typeof(modifiedLS))
     sessionStorage.setItem("modifiedLS", modifiedLS);
     sessionStorage.setItem("modifiedItem", JSON.stringify(modifiedItem));
-    window.location.href = "../tracking.html";
+   let arr = window.location.href.split("/");
+   arr[arr.legth - 1] = "tracking.html";
+   window.location.href = arr.join("/");
   }
 });
 function buyAgain(iLocalStorage, iData) {

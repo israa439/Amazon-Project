@@ -39,7 +39,6 @@
 .main {
   width: 80%;
   margin: 150px auto;
-
 }
 /*CARDS*/
 .cards {
@@ -106,8 +105,8 @@
 /*ITEM CONTAINER*/
 .item-container {
   width: unset;
-   display:grid;
-   grid-template-columns: 1fr 4fr;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   margin-top: 10px;
   margin-bottom: 5px;
   gap: 35px;
@@ -117,54 +116,53 @@
 .image-container {
   width: 100px;
   height: 100px;
-
-}/*IMAGE*/
+} /*IMAGE*/
 .image-container img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 /*ITEM DETAILS CONTAINER*/
 .item-tracking-container {
   width: unset;
   display: flex;
   justify-content: space-between;
-
 }
 /*ITEM DETAILS*/
 
-.item-name{
+.item-name {
   margin-top: 0px;
   margin-bottom: 5px;
-
 }
-.arrival-header,.color-selection{
+.arrival-header,
+.color-selection {
   margin-bottom: 3px;
 }
-.arrival-date,.color{
+.arrival-date,
+.color {
   color: rgb(101, 101, 101);
 }
-.order-again{
- 
+.order-again {
   margin-top: 10px;
   width: 130px;
   height: 30px;
   display: flex;
- justify-content: center;
+  justify-content: center;
   gap: 10px;
   padding-bottom: 13px;
 }
-.order-again img{
+.order-again img {
   width: 30px;
 }
-.order-again p{
+.order-again p {
   margin-top: 7px;
 }
 /*TRACKING CONTAINER*/
-.track-btn{
+.track-btn {
   width: 160px;
   height: 30px;
   background-color: transparent;
-   border-radius: 8px;
+  border-radius: 8px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
   border: 2px solid rgb(235, 226, 226);
@@ -187,7 +185,7 @@
   }
 }
 @media (max-width: 800px) {
-  .track-btn{
+  .track-btn {
     width: 130px;
   }
   .item-tracking-container {
@@ -196,15 +194,15 @@
     gap: 5px;
   }
 }
-@media (max-width: 530px){
-
-.item-container {
-  width: unset;
-   display: flex;
-   flex-direction: column;
- align-items: center;
-}
- .track-btn,.order-again{
+@media (max-width: 530px) {
+  .item-container {
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .track-btn,
+  .order-again {
     width: 90%;
   }
 }

@@ -20,13 +20,14 @@ function getInput() {
   return typedText;
 }
 function searchItems() {
-  let res = getInput();
+  let res = getInput().toLocaleLowerCase();
   let filteredProducts = products.filter((product) => {
     let hasMatchingKeyword = product.keywords.some((keyword) => {
-      return keyword.toLocaleLowerCase().includes(res);
+      return res.includes(keyword.toLocaleLowerCase()) || keyword.toLocaleLowerCase().includes(res);
     });
     return hasMatchingKeyword;
   });
+  console.log(filteredProducts)
   renderSearchedItems(filteredProducts);
 }
 function renderSearchedItems(p) {
@@ -44,7 +45,9 @@ function renderSearchedItems(p) {
   }
 }
 function handleKeyPress(event) {
+   console.log("reached the key press");
   if (event.key === "Enter") {
+   
     searchItems();
   }
 }
@@ -113,9 +116,10 @@ function renderItems(item, i) {
   container.appendChild(dives);
 }
 async function modifyImage(products) {
+  
   let parentDiv = document.querySelectorAll(".container");
   parentDiv.forEach((div) => {
-    div.addEventListener("click", (e) => {
+    div.addEventListener("mouseover", () => {
       let i = div.getAttribute("data-index");
       let btns = div.querySelectorAll(".colorBtn");
       btns.forEach((btn, index) => {

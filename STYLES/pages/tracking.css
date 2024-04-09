@@ -17,10 +17,19 @@
   display: block;
   font-size: 15px;
 }
-.main {
+/*MAIN CONTAINER*/
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+}
+.main {
+width: 90%;
   margin-top: 100px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  align-items: center;
+ 
 }
 .item {
   margin-bottom: 3px;
@@ -42,14 +51,13 @@
   flex-direction: row;
   justify-content: space-between;
   margin-left: 20px;
-  padding-left: 15px;
   margin-bottom: 10px;
 }
 .timing-container {
   width: 90%;
   border: 2px solid green;
   height: 30px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   border-radius: 20px;
 }
 .timing {
